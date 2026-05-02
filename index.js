@@ -62,8 +62,7 @@ bot.on("message", async (msg) => {
 
     bot.sendMessage(chatId, reply);
 
-  } catch (err) {
-    console.log(err.message);
-    bot.sendMessage(chatId, "⚠️ صار خطأ، حاول لاحقاً");
-  }
-});
+  catch (err) {
+  console.log("ERROR:", err);
+  bot.sendMessage(chatId, "صار خطأ 😕 تأكد من الإعدادات أو الـ API");
+}
